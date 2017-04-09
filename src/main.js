@@ -4,8 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import IrisUI from './index.js'
 
-Vue.config.productionTip = false
-
 Vue.use(IrisUI)
 
 /* eslint-disable no-new */
