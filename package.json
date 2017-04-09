@@ -4,6 +4,7 @@
   "description": "Responsive Design Vue.js 2.0 UI Library",
   "author": "Elfstack",
   "private": false,
+  "main": "dist/iris-ui.min.js",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
