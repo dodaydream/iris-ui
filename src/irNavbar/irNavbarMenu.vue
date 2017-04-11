@@ -1,8 +1,8 @@
 <template>
   <div class="ir-navbar-menu">
-    <ir-button @click.native="toggleMenu">
+    <button class="menu-button" @click="toggleMenu">
       <i class="md-icon">menu</i>
-    </ir-button>
+    </button>
 
     <div class="ir-navbar-menu-container" v-bind:class="{ 'ir-navbar-menu-container-show' : menuVisible}">
       <slot></slot>
@@ -45,11 +45,17 @@ export default {
 
 .ir-navbar-menu{
   @media screen and (max-width: 768px) { //phone
-    & > .ir-button {
+    & > .menu-button {
       height: 56px;
       color: @primary-color;
       margin-left: 1em;
       line-height: 50%;
+      outline: none;
+      font-size: 1em;
+      font-weight: lighter;
+      background: none;
+      border: none;
+      padding: 0;
     }
 
     .ir-navbar-menu-container {
@@ -86,7 +92,7 @@ export default {
   @media screen and (min-width: 768px) {
     padding-right: 1em;
 
-    & > .ir-button{
+    & > .menu-button{
       display: none;
     }
 

@@ -68,7 +68,7 @@ export default {
 
   .ir-title {
     font-size: 1.5em;
-    padding-left: 0.5em;
+    padding-left: 1rem;
     flex: 1;
   }
 
@@ -90,7 +90,6 @@ export default {
     .ir-title {
       order: -1;
     }
-
   }
 }
 </style>
