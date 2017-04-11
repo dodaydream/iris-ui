@@ -2,26 +2,15 @@
 
 > Responsive Design Vue.js 2.0 UI Library
 
-## Build Setup
+## Install
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
+```bash
+npm install iris-ui --save
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Credit
+
+This Library is inspired from the following project
+
+[MuseUI](http://www.muse-ui.org)
+[VueMaterial](https://vuematerial.github.io)

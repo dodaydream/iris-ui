@@ -1,7 +1,7 @@
 import './base.less'
-import irNavbar from '@/irNavbar'
-import irMenu from '@/irMenu'
-import irButton from '@/irButton'
+import irNavbar from './irNavbar'
+import irMenu from './irMenu'
+import irButton from './irButton'
 
 const components = {
   irNavbar,

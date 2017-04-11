@@ -32,10 +32,8 @@
 </template>
 
 <style lang="less">
-@import "./less/palette.less";
 .section {
   padding-bottom: 0.5em;
-  border-bottom: 1px solid fadeout(@primary-color, 50%);
 }
 body {
   @media screen and (max-width: 1024px) {

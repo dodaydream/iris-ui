@@ -24,6 +24,7 @@ export default {
   font-weight: lighter;
   padding: 0.5em;
   border-radius: 2px;
+  min-width: 5em;
 }
 
 .ir-btn-default {
