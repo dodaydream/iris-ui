@@ -8,5 +8,6 @@
 .ir-menu {
   list-style: none;
   outline: none;
+  padding: 0;
 }
 </style>

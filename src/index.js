@@ -2,11 +2,14 @@ import './base.less'
 import irNavbar from './irNavbar'
 import irMenu from './irMenu'
 import irButton from './irButton'
+import irJumbotron from './irJumbotron'
+require('the-flex-grid')
 
 const components = {
   irNavbar,
   irMenu,
-  irButton
+  irButton,
+  irJumbotron
 }
 
 components.install = (Vue) => {

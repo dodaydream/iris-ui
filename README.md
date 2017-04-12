@@ -10,7 +10,10 @@ npm install iris-ui --save
 
 ## Credit
 
-This Library is inspired from the following project
+This library is inspired by the following project
 
-[MuseUI](http://www.muse-ui.org)
-[VueMaterial](https://vuematerial.github.io)
+- [MuseUI](http://www.muse-ui.org)
+- [VueMaterial](https://vuematerial.github.io)
+
+
+Grid system of this library is [The Flex Grid](http://jeroenoomsnl.github.io/the-flex-grid/)

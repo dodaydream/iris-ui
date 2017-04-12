@@ -4,9 +4,10 @@
   "description": "Responsive Design Vue.js 2.0 UI Library",
   "author": "Elfstack",
   "registry": "github",
+  "license": "MIT",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/dodaydream/iris-ui.git"
+    "type": "git",
+    "url": "https://github.com/dodaydream/iris-ui.git"
   },
   "main": "dist/iris-ui.js",
   "scripts": {
@@ -19,6 +20,7 @@
     "test:watch": "NODE_ENV=test karma start test/unit/karma.conf.js"
   },
   "dependencies": {
+    "the-flex-grid": "^1.5.1",
     "vue": "^2.2.2"
   },
   "devDependencies": {

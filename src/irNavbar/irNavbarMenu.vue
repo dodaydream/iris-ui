@@ -101,9 +101,6 @@ export default {
         display: inline;
         font-size: 1.25em;
         padding: 1em 0.5em 1em 0.5em;
-        &:hover {
-          background-color: fadeout(@primary-color, 90%);
-        }
       }
     }
   }

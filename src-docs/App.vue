@@ -12,6 +12,11 @@
       <span class="ir-title">Iris UI</span>
     </ir-navbar>
 
+    <ir-jumbotron>
+      <h1 align="center">Iris UI</h1>
+      <h3 align="center">Redefined Web UI Library</h3>
+    </ir-jumbotron>
+
     <div class="container">
       <h1 class="section">Typography</h1>
       <h1>h1. Iris UI Heading</h1>
