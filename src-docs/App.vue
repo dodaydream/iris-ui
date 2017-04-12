@@ -5,7 +5,7 @@
         <ir-menu>
           <ir-menu-item>About</ir-menu-item>
           <ir-menu-item>Docs</ir-menu-item>
-          <ir-menu-item>Contact</ir-menu-item>
+          <ir-menu-item>GitHub</ir-menu-item>
         </ir-menu>
       </ir-navbar-menu>
 
@@ -15,9 +15,39 @@
     <ir-jumbotron>
       <h1 align="center">Iris UI</h1>
       <h3 align="center">Redefined Web UI Library</h3>
+      <h5 align="center">
+        <ir-button type="outline">Document</ir-button>
+        <ir-button type="outline"><a href="https://github.com/dodaydream/iris-ui">View on GitHub</a></ir-button>
+      </h5>
     </ir-jumbotron>
 
-    <div class="container">
+    <div class="container-fluid">
+      <section>
+        <h1 class="section">Navbar</h1>
+        <ir-navbar>
+          <ir-navbar-menu>
+            <ir-menu>
+              <ir-menu-item>About</ir-menu-item>
+              <ir-menu-item>Docs</ir-menu-item>
+              <ir-menu-item>GitHub</ir-menu-item>
+            </ir-menu>
+          </ir-navbar-menu>
+
+          <span class="ir-title">Navbar default</span>
+        </ir-navbar>
+
+        <ir-navbar class="ir-navbar-coloured">
+          <ir-navbar-menu>
+            <ir-menu>
+              <ir-menu-item>About</ir-menu-item>
+              <ir-menu-item>Docs</ir-menu-item>
+              <ir-menu-item>GitHub</ir-menu-item>
+            </ir-menu>
+          </ir-navbar-menu>
+
+          <span class="ir-title">Coloured Navbar</span>
+        </ir-navbar>
+      </section>
       <h1 class="section">Typography</h1>
       <h1>h1. Iris UI Heading</h1>
       <h2>h2. Iris UI Heading</h2>
@@ -31,8 +61,12 @@
 
       <h1 class="section">Button</h1>
       <ir-button>Default</ir-button>
-      <ir-button color="ir-btn-outline">Outline</ir-button>
+      <ir-button type="outline">Outline</ir-button>
+      <ir-button type="emphasis">Emphasis</ir-button>
     </div>
+
+    <ir-footer prod-name="Iris UI">
+    </ir-footer>
   </div>
 </template>
 

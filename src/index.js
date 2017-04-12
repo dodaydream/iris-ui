@@ -3,13 +3,15 @@ import irNavbar from './irNavbar'
 import irMenu from './irMenu'
 import irButton from './irButton'
 import irJumbotron from './irJumbotron'
+import irFooter from './irFooter'
 require('the-flex-grid')
 
 const components = {
   irNavbar,
   irMenu,
   irButton,
-  irJumbotron
+  irJumbotron,
+  irFooter
 }
 
 components.install = (Vue) => {

@@ -44,6 +44,11 @@ export default {
 
 <style lang="less">
 @import '../less/palette.less';
+.ir-navbar-coloured {
+  background-color: @primary-color !important;
+  color: #fff !important;
+}
+
 .ir-shadow {
   box-shadow:  0 3px 3px rgba(0,0,0,0.22);
 }
@@ -65,6 +70,7 @@ export default {
 .ir-navbar {
   color: @primary-color;
   background-color: @background-color;
+  transition: .25s;
 
   .ir-title {
     font-size: 1.5em;

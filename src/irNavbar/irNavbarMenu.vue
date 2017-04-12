@@ -47,7 +47,7 @@ export default {
   @media screen and (max-width: 768px) { //phone
     & > .menu-button {
       height: 56px;
-      color: @primary-color;
+      color: inherit;
       margin-left: 1em;
       line-height: 50%;
       outline: none;
@@ -97,6 +97,10 @@ export default {
     }
 
     .ir-navbar-menu-container {
+      * {
+        display: inline;
+      }
+
       .ir-menu-item{
         display: inline;
         font-size: 1.25em;
