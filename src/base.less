@@ -1,4 +1,9 @@
 @import "./less/normalize.css";
+@import "./less/palette.less";
+
+* {
+    outline: none;
+}
 
 body {
     font-family: 'Titillium Web', sans-serif;
@@ -9,6 +14,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
 }
 
+a {
+    color: @primary-color;
+    text-decoration: none;
+}
+
 .container {
     padding: 0 1em 0 1em;
     margin: 0 auto;
@@ -17,6 +27,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .container-fluid {
     padding: 0 1em 0.5em 1em;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  word-wrap: break-word;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        text-align: left;
+        padding: 0.618em;
+        vertical-align: top;
+        border-top: 0;
+      }
+    }
+  }
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+  }
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+  > tbody + tbody {
+    border-top: 1px solid rgba(0,0,0,.12);
+  }
 }
 
 .md-icon {

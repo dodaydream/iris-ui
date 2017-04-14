@@ -53,13 +53,6 @@ export default {
   box-shadow:  0 3px 3px rgba(0,0,0,0.22);
 }
 
-.ir-navbar-fixed {
-  position: fixed;
-  top: 0px;
-  z-index: 2;
-  width: 100%;
-}
-
 .ir-navbar-container {
   width: 100%;
   display: flex;
@@ -71,6 +64,10 @@ export default {
   color: @primary-color;
   background-color: @background-color;
   transition: .25s;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  width: 100%;
 
   .ir-title {
     font-size: 1.5em;

@@ -9,5 +9,7 @@
   list-style: none;
   outline: none;
   padding: 0;
+  margin: 0;
+  transition: 1s;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="ir-navbar-menu">
-    <button class="menu-button" @click="toggleMenu">
+    <button class="menu-button" @click="toggleMenu" round-ripple="true">
       <i class="md-icon">menu</i>
     </button>
 
@@ -66,6 +66,7 @@ export default {
       top: 0;
       left: -256px;
       background-color: @background-color;
+      color: @primary-color;
       transition: .25s;
       transition-timing-function: ease-in-out;
     }
@@ -101,10 +102,30 @@ export default {
         display: inline;
       }
 
-      .ir-menu-item{
+      .ir-menu-item {
         display: inline;
-        font-size: 1.25em;
-        padding: 1em 0.5em 1em 0.5em;
+        margin: 0.5em;
+        padding: 0;
+      }
+
+      .ir-menu-item-expand {
+        .ir-menu-toggle {
+          padding: 0;
+        }
+
+        .ir-menu-container {
+          position: fixed;
+          top: 60px;
+          box-shadow: 0 3px 3px rgba(0,0,0,0.22);
+          width: 100%;
+          left: 0;
+          display: flex;
+          flex-direction: row-reverse;
+          & > .ir-menu-item:nth-child(1) {
+            padding-right: 1em;
+          }
+          background-color: @background-color;
+        }
       }
     }
   }

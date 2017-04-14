@@ -1,5 +1,7 @@
 <template>
-  <li class="ir-menu-item"><slot></slot></li>
+  <li class="ir-menu-item">
+    <slot></slot>
+  </li>
 </template>
 
 <style lang="less">

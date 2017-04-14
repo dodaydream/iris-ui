@@ -4,6 +4,7 @@ import irMenu from './irMenu'
 import irButton from './irButton'
 import irJumbotron from './irJumbotron'
 import irFooter from './irFooter'
+//  import MaterialRipple from './ripple'
 require('the-flex-grid')
 
 const components = {
