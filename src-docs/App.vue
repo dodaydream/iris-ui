@@ -25,6 +25,9 @@
         <ir-button type="outline">Document</ir-button>
         <ir-button type="outline"><a href="https://github.com/dodaydream/iris-ui">View on GitHub</a></ir-button>
       </h5>
+      <h5 align="center"><small>
+        *This release is not stable and should not be used in production environment
+      </small></h5>
     </ir-jumbotron>
 
     <div class="container-fluid">
@@ -110,6 +113,12 @@
             </tr>
           </tbody>
         </table>
+      </section>
+
+      <section>
+        <h1 class="section">Notification</h1>
+        <ir-button @click.native="this.$refs.notification.toggle()">Toggle Notification</ir-button>
+        <ir-notification ref="notification">Hello!</ir-notification>
       </section>
     </div>
 

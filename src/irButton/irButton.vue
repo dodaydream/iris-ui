@@ -1,7 +1,6 @@
 <template>
   <button class="ir-button" v-bind:class="'ir-btn-' + this.type">
     <slot></slot>
-    <ripple></ripple>
   </button>
 </template>
 
@@ -11,10 +10,6 @@ export default {
     type: {
       type: String,
       default: 'default'
-    },
-    roundRipple: {
-      type: Boolean,
-      default: false
     }
   }
 }

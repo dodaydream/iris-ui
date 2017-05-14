@@ -4,6 +4,7 @@ import irMenu from './irMenu'
 import irButton from './irButton'
 import irJumbotron from './irJumbotron'
 import irFooter from './irFooter'
+import irNotification from './irNotification'
 //  import MaterialRipple from './ripple'
 require('the-flex-grid')
 
@@ -12,7 +13,8 @@ const components = {
   irMenu,
   irButton,
   irJumbotron,
-  irFooter
+  irFooter,
+  irNotification
 }
 
 components.install = (Vue) => {

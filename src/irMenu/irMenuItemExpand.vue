@@ -1,10 +1,9 @@
 <template>
   <ir-menu-item class="ir-menu-item-expand">
-    <a class="ir-menu-item" v-text="title" @click="toggle()"></a>
-    <div class="ir-menu-container" v-bind:class="{ 'ir-menu-hide': hide }">
+    <a class="ir-menu-item" v-text="title" @click="toggle()" @mouseover="toggle()"></a>
+    <div class="ir-menu-container" v-bind:class="{ 'ir-menu-hide': hide }" @mouseleave="toggle()">
       <slot></slot>
     </div>
-    <div class="ir-menu-backdrop" v-if="hide === false" @click="toggle()"></div>
   </ir-menu-item>
 </template>
 
@@ -18,11 +17,7 @@ export default {
   },
   methods: {
     toggle () {
-      if (this.hide) {
-        this.hide = false
-      } else {
-        this.hide = true
-      }
+      this.hide = !this.hide
     }
   }
 }
@@ -47,14 +42,5 @@ export default {
 .ir-menu-hide {
   opacity: 0;
   display: none;
-}
-
-.ir-menu-backdrop {
-  position: fixed;
-  z-index: 3;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
 }
 </style>

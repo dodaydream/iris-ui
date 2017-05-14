@@ -1,6 +1,4 @@
-import irNavbar from './irNavbar.vue'
-import irNavbarMenu from './irNavbarMenu.vue'
+import irNotification from './irNotification.vue'
 export default function install (Vue) {
-  Vue.component('ir-navbar', irNavbar)
-  Vue.component('ir-navbar-menu', irNavbarMenu)
+  Vue.component('ir-notification', irNotification)
 }
