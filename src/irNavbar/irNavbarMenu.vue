@@ -114,16 +114,9 @@ export default {
         }
 
         .ir-menu-container {
-          position: fixed;
+          position: relative;
           top: 60px;
           box-shadow: 0 3px 3px rgba(0,0,0,0.22);
-          width: 100%;
-          left: 0;
-          display: flex;
-          flex-direction: row-reverse;
-          & > .ir-menu-item:nth-child(1) {
-            padding-right: 1em;
-          }
           background-color: @background-color;
         }
       }
