@@ -118,7 +118,7 @@
       <section>
         <h1 class="section">Notification</h1>
         <ir-button @click.native="this.$refs.notification.toggle()">Toggle Notification</ir-button>
-        <ir-notification ref="notification">Hello!</ir-notification>
+        <ir-notification ref="notification" message="test">Hello!</ir-notification>
       </section>
     </div>
 

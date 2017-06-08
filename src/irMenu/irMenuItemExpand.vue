@@ -1,9 +1,9 @@
 <template>
   <ir-menu-item class="ir-menu-item-expand">
-    <a class="ir-menu-item" v-text="title" @click="toggle()" @mouseover="toggle()"></a>
-    <div class="ir-menu-container" v-bind:class="{ 'ir-menu-hide': hide }" @mouseleave="toggle()">
+    <li class="ir-menu-item" v-text="title" @click="toggle()"></li>
+    <ul class="ir-menu-container" v-bind:class="{ 'ir-menu-hide': hide }">
       <slot></slot>
-    </div>
+    </ul>
   </ir-menu-item>
 </template>
 
@@ -24,6 +24,10 @@ export default {
 </script>
 
 <style lang="less">
+.ir-menu-item-expand:hover ul {
+  display: block;
+}
+
 .ir-menu-item-expand {
   padding: 0;
   &:hover {
@@ -37,10 +41,7 @@ export default {
 
 .ir-menu-container {
   transition: .25s;
-}
-
-.ir-menu-hide {
-  opacity: 0;
   display: none;
+  padding: 0;
 }
 </style>

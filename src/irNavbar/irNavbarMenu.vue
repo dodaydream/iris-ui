@@ -98,29 +98,20 @@ export default {
     }
 
     .ir-navbar-menu-container {
-      * {
-        display: inline;
-      }
-
-      .ir-menu-item {
-        display: inline;
-        margin: 0.5em;
-        padding: 0;
-      }
-
-      .ir-menu-item-expand {
-        .ir-menu-toggle {
-          padding: 0;
+        .ir-menu-item {
+          display: inline;
         }
-
         .ir-menu-container {
-          position: relative;
-          top: 60px;
+          z-index: 4;
+          position: fixed;
+          top: 64px;
           box-shadow: 0 3px 3px rgba(0,0,0,0.22);
           background-color: @background-color;
+          .ir-menu-item {
+            display: block;
+          }
         }
       }
     }
-  }
 }
 </style>
