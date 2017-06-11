@@ -17,6 +17,14 @@
 
 <script>
 export default {
-  props: ['placeholder']
+  props: ['placeholder'],
+  data () {
+    return {
+      text: ''
+    }
+  },
+  watch () {
+    
+  }
 }
 </script>
